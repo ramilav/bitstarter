@@ -7,7 +7,7 @@ var buffer = new Buffer ( file , "utf-8")
 
 app.get('/', function(request, response) {
     
-  response.send(text.toString());
+  response.send(buffer.toString());
 });
 
 var port = process.env.PORT || 5000;
